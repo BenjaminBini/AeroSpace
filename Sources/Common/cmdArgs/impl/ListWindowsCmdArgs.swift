@@ -209,8 +209,6 @@ public enum AeroObjKind: CaseIterable, Sendable {
     case window, workspace, app, monitor
 
     public func getFormatWithAllVariable() -> [StringInterToken] {
-
-
         return getAvailableInterVars(for: self)
             .map(StringInterToken.interVar)
             .filter {
